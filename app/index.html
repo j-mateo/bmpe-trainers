@@ -35,7 +35,7 @@
 
       <div class="jumbotron">
         <h1>New Order</h1>
-        <p class="lead">For personal trainers and gym staff</p>
+        <p class="lead">Below you will enter your clients custom meal plan. The meals will be delivered every Sunday morning to the gym. Please fill out all the information and submit it. Orders need to be submitted by Thursday evening at 8PM to be delivered on the upcoming Sunday.</p>
       </div>
 
       <div class="row">
@@ -43,7 +43,7 @@
           <form action="https://formspree.io/jmateo6@gmail.com" class="form" method="post">
             <input type="hidden" name="_next" value="https://j-mateo.github.io/bmpe-trainers/thanks.html" />
             <fieldset>
-              <legend>Customer Info</legend>
+              <legend>Customer</legend>
             <div class="form-group">
               <label for="customerName">Name</label>
               <input class="form-control" type="text" name="customerName" id="customerName" placeholder="Enter the customer's name">
@@ -54,101 +54,307 @@
             </div>
           </fieldset>
           <fieldset>
-            <legend>Menu</legend>
+            <legend>Trainer</legend>
+          <div class="form-group">
+            <label for="trainerName">Name</label>
+            <input class="form-control" type="text" name="trainerName" id="trainerName" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="trainerEmail">Email</label>
+            <input type="email" class="form-control" name="trainerEmail" id="trainerEmail" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="trainerGym">Gym</label>
+            <input type="text" class="form-control" name="trainerGym" id="trainerGym" placeholder="Enter your gym">
+          </div>
+        </fieldset>
+          <fieldset>
+            <legend>Meal 1</legend>
+
             <div class="form-group">
               <label for="meat">Meat</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="meat" id="meat1" value="Chicken Breast" checked>
-                  Chicken Breast – Grilled 4 oz. serving Cal: 135 Fat: 1.4g, Carb: 0g, Pro: 26g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="meat" id="meat2" value="Turkey">
+              <select name="meal1" class="form-control">
+                <option value="Chicken Breast">
+                Chicken Breast – Grilled 4 oz. serving Cal: 135 Fat: 1.4g, Carb: 0g, Pro: 26g
+                </option>
+                <option value="Turkey">
                   Turkey – Breast or Ground - 4 oz. serving Cal: 168 Fat: 1.3g, Carb: 0g, P: 36g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="meat" id="meat3" value="London Broil" >
-                  London Broil - 4 oz. serving Cal: 168 Fat:5g, Carb:0g, P: 24g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="meat" id="meat4" value="Salmon" >
+                </option>
+                <option value="London Broil">
+                London Broil - 4 oz. serving Cal: 168 Fat:5g, Carb:0g, P: 24g
+                </option>
+                <option value="Salmon">
                   Wild Caught Salmon 4 oz. serving Cal: 207 Fat: 9g, Carb: 0g, P: 29g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="meat" id="meat5" value="Cod" >
+                </option>
+                <option value="Cod">
                   Wild Caught Cod 4 oz. serving Cal: 127 Fat: 1g, Carb: 0g, P: 28g
-                </label>
-              </div>
+                </option>
+              </select>
             </div>
+
             <div class="form-group">
-              <label for="starch">Starch</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="starch" id="starch1" value="Brown Rice" checked>
+              <label for="meat">Starch</label>
+              <select name="meal1" class="form-control">
+                <option value="Brown Rice">
                   Brown Rice - 4oz serving Cal: 108 Fat: .88g, Carb: 22.5g, Pro: 2.5g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="starch" id="starch2" value="Mashed Potatoes">
+                </option>
+                <option value="Mashed Potato">
                   Mashed Potato – 4oz serving Cal: 140 Fat: 5g, Carb: 24g, Pro: 3g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="starch" id="starch3" value="Double Veggies" >
-                  No Starch - Double Veggies
-                </label>
-              </div>
+                </option>
+                <option value="No Starch">
+                No Starch - Double Veggies
+                </option>
+              </select>
             </div>
+
             <div class="form-group">
-              <label for="veggies">Veggies</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="veggies" id="veggies1" value="Asparagus" checked>
+              <label for="meat">Veggies</label>
+              <select name="meal1" class="form-control">
+                <option value="Asparagus">
                   Asparagus - 4oz serving Cal: 25 Fat: 1g, Carb: 6g, Pro: 3g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="veggies" id="veggies2" value="Broccoli">
+                </option>
+                <option value="Broccoli">
                   Broccoli - 4oz serving Cal: 40 Fat: 1g, Carb: 6g, Pro: 3g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="veggies" id="veggies3" value="Carrots" >
+                </option>
+                <option value="Carrots">
                   Carrots - 4oz serving Cal: 46 Fat: .3g, Carb: 11g, Pro: 1g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="veggies" id="veggies4" value="Corn" >
+                </option>
+                <option value="Corn">
                   Corn - 4oz serving Cal: 98 Fat: 1.35g, Carb: 21g, Pro: 3g
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="veggies" id="veggies5" value="Green Beans" >
+                </option>
+                <option value="Green Beans">
                   Green Beans - 4oz serving Cal: 35 Fat: 1g, Carb: 8g, Pro: 2g
-                </label>
-              </div>
+                </option>
+              </select>
             </div>
             <div class="form-group">
               <label for="quantity">Quantity</label>
-              <input type="number" class="form-control" name="quantity" id="quantity">
+              <input type="number" class="form-control" name="meal1" id="quantity">
             </div>
           </fieldset>
+
+
+          <fieldset>
+            <legend>Meal 2</legend>
+
+            <div class="form-group">
+              <label for="meat">Meat</label>
+              <select name="meal2" class="form-control">
+                <option value="Chicken Breast">
+                Chicken Breast – Grilled 4 oz. serving Cal: 135 Fat: 1.4g, Carb: 0g, Pro: 26g
+                </option>
+                <option value="Turkey">
+                  Turkey – Breast or Ground - 4 oz. serving Cal: 168 Fat: 1.3g, Carb: 0g, P: 36g
+                </option>
+                <option value="London Broil">
+                London Broil - 4 oz. serving Cal: 168 Fat:5g, Carb:0g, P: 24g
+                </option>
+                <option value="Salmon">
+                  Wild Caught Salmon 4 oz. serving Cal: 207 Fat: 9g, Carb: 0g, P: 29g
+                </option>
+                <option value="Cod">
+                  Wild Caught Cod 4 oz. serving Cal: 127 Fat: 1g, Carb: 0g, P: 28g
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="meat">Starch</label>
+              <select name="meal2" class="form-control">
+                <option value="Brown Rice">
+                  Brown Rice - 4oz serving Cal: 108 Fat: .88g, Carb: 22.5g, Pro: 2.5g
+                </option>
+                <option value="Mashed Potato">
+                  Mashed Potato – 4oz serving Cal: 140 Fat: 5g, Carb: 24g, Pro: 3g
+                </option>
+                <option value="No Starch">
+                No Starch - Double Veggies
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="meat">Veggies</label>
+              <select name="meal2" class="form-control">
+                <option value="Asparagus">
+                  Asparagus - 4oz serving Cal: 25 Fat: 1g, Carb: 6g, Pro: 3g
+                </option>
+                <option value="Broccoli">
+                  Broccoli - 4oz serving Cal: 40 Fat: 1g, Carb: 6g, Pro: 3g
+                </option>
+                <option value="Carrots">
+                  Carrots - 4oz serving Cal: 46 Fat: .3g, Carb: 11g, Pro: 1g
+                </option>
+                <option value="Corn">
+                  Corn - 4oz serving Cal: 98 Fat: 1.35g, Carb: 21g, Pro: 3g
+                </option>
+                <option value="Green Beans">
+                  Green Beans - 4oz serving Cal: 35 Fat: 1g, Carb: 8g, Pro: 2g
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" class="form-control" name="meal2" id="quantity">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Meal 3</legend>
+
+            <div class="form-group">
+              <label for="meat">Meat</label>
+              <select name="meal3" class="form-control">
+                <option value="Chicken Breast">
+                Chicken Breast – Grilled 4 oz. serving Cal: 135 Fat: 1.4g, Carb: 0g, Pro: 26g
+                </option>
+                <option value="Turkey">
+                  Turkey – Breast or Ground - 4 oz. serving Cal: 168 Fat: 1.3g, Carb: 0g, P: 36g
+                </option>
+                <option value="London Broil">
+                London Broil - 4 oz. serving Cal: 168 Fat:5g, Carb:0g, P: 24g
+                </option>
+                <option value="Salmon">
+                  Wild Caught Salmon 4 oz. serving Cal: 207 Fat: 9g, Carb: 0g, P: 29g
+                </option>
+                <option value="Cod">
+                  Wild Caught Cod 4 oz. serving Cal: 127 Fat: 1g, Carb: 0g, P: 28g
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="meat">Starch</label>
+              <select name="meal3" class="form-control">
+                <option value="Brown Rice">
+                  Brown Rice - 4oz serving Cal: 108 Fat: .88g, Carb: 22.5g, Pro: 2.5g
+                </option>
+                <option value="Mashed Potato">
+                  Mashed Potato – 4oz serving Cal: 140 Fat: 5g, Carb: 24g, Pro: 3g
+                </option>
+                <option value="No Starch">
+                No Starch - Double Veggies
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="meat">Veggies</label>
+              <select name="meal3" class="form-control">
+                <option value="Asparagus">
+                  Asparagus - 4oz serving Cal: 25 Fat: 1g, Carb: 6g, Pro: 3g
+                </option>
+                <option value="Broccoli">
+                  Broccoli - 4oz serving Cal: 40 Fat: 1g, Carb: 6g, Pro: 3g
+                </option>
+                <option value="Carrots">
+                  Carrots - 4oz serving Cal: 46 Fat: .3g, Carb: 11g, Pro: 1g
+                </option>
+                <option value="Corn">
+                  Corn - 4oz serving Cal: 98 Fat: 1.35g, Carb: 21g, Pro: 3g
+                </option>
+                <option value="Green Beans">
+                  Green Beans - 4oz serving Cal: 35 Fat: 1g, Carb: 8g, Pro: 2g
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" class="form-control" name="meal3" id="quantity">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Meal 4</legend>
+
+            <div class="form-group">
+              <label for="meat">Meat</label>
+              <select name="meal4" class="form-control">
+                <option value="Chicken Breast">
+                Chicken Breast – Grilled 4 oz. serving Cal: 135 Fat: 1.4g, Carb: 0g, Pro: 26g
+                </option>
+                <option value="Turkey">
+                  Turkey – Breast or Ground - 4 oz. serving Cal: 168 Fat: 1.3g, Carb: 0g, P: 36g
+                </option>
+                <option value="London Broil">
+                London Broil - 4 oz. serving Cal: 168 Fat:5g, Carb:0g, P: 24g
+                </option>
+                <option value="Salmon">
+                  Wild Caught Salmon 4 oz. serving Cal: 207 Fat: 9g, Carb: 0g, P: 29g
+                </option>
+                <option value="Cod">
+                  Wild Caught Cod 4 oz. serving Cal: 127 Fat: 1g, Carb: 0g, P: 28g
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="meat">Starch</label>
+              <select name="meal4" class="form-control">
+                <option value="Brown Rice">
+                  Brown Rice - 4oz serving Cal: 108 Fat: .88g, Carb: 22.5g, Pro: 2.5g
+                </option>
+                <option value="Mashed Potato">
+                  Mashed Potato – 4oz serving Cal: 140 Fat: 5g, Carb: 24g, Pro: 3g
+                </option>
+                <option value="No Starch">
+                No Starch - Double Veggies
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="meat">Veggies</label>
+              <select name="meal4" class="form-control">
+                <option value="Asparagus">
+                  Asparagus - 4oz serving Cal: 25 Fat: 1g, Carb: 6g, Pro: 3g
+                </option>
+                <option value="Broccoli">
+                  Broccoli - 4oz serving Cal: 40 Fat: 1g, Carb: 6g, Pro: 3g
+                </option>
+                <option value="Carrots">
+                  Carrots - 4oz serving Cal: 46 Fat: .3g, Carb: 11g, Pro: 1g
+                </option>
+                <option value="Corn">
+                  Corn - 4oz serving Cal: 98 Fat: 1.35g, Carb: 21g, Pro: 3g
+                </option>
+                <option value="Green Beans">
+                  Green Beans - 4oz serving Cal: 35 Fat: 1g, Carb: 8g, Pro: 2g
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" class="form-control" name="meal4" id="quantity">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Subscription</legend>
+            <div class="form-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="length" id="length1" value="weekly">
+                  Weekly
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="length" id="length2" value="three months" checked="">
+                  Three Months - Pay for 3 months up front and receive 10% off
+                </label>
+              </div>
+              <div class="radio disabled">
+                <label>
+                  <input type="radio" name="length" id="length3" value="six months">
+                  Six Months - Pay for 6 months up front and receive 20% off
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
           <div class="form-group">
-            <button class="btn btn-success">Submit</button>
+            <button class="btn btn-success">Subscribe</button>
 
           </div>
           </form>
